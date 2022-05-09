@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+    s
+</head>
+<body>
+<header>
+    <div class="nav">
+
+        <h1></h1>
+    </div>
+</header>
+<main>
+    <div class="main-contaner">
+        <div class="numbers" id="num">
+            <button id="math-button" onclick="getRandomValues()">Lorem ipsum dolor sit amet.
+            </button>
+        </div>
+        <div class="form-container">
+            <form id="form" novalidate>
+                <div>
+                    <label for="name">Matta in din namn</label>
+                    <div>
+                    <input type="text" name="name" placeholder="name" id="name">
+                        <p style="color:red" class="prettyprint hiddentext name">Fältetet får inte vara  tomt</p>
+                    </div>
+                </div>
+                <div>
+                    <label for="password">Matta in din lösenord minst 6 symboler</label>
+                    <div>
+                        <input type="password" name="password" placeholder="lösenord" id="password">
+                        <p style="color:red" class="prettyprint hiddentext password">Fältet är tomt eller värde är för kort</p>
+                    </div>
+                </div>
+                <div>
+                    <label for="passRep">Matta in lösenord igen </label>
+                    <div>
+                        <input type="password" name="password-duplicate" placeholder=" lösenord igen" id="passRep">
+                        <p style="color:red" class="prettyprint hiddentext passRep">Fältet är tom eller lösenord stämmer inte </p>
+                    </div>
+                </div>
+                <div>
+                    <label for="email">Matta in din email</label>
+                   <div> <input type="email" name="email" placeholder="email" id="email">
+                    <p style="color:red" class="prettyprint hiddentext email">Värdet är felaktig eller fältet är tom</p>
+                   </div>
+
+                </div>
+                <div>
+                    <div>
+                        <label for="check">Har du läst villkoren</label>
+                        <input type="checkbox" name="check" id="check">
+                        <p style="color:red" class="prettypre hallo hiddentext check" >Kryssa fältet</p>
+                    </div>
+                    <input type="submit" value="Skicka"></div>
+            </form>
+        </div>
+    </div>
+</main>
+<footer>
+
+</footer>
+<script src='code.js'></script>
+</body>
+</html>

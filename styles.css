@@ -1,0 +1,43 @@
+input[type=checkbox]{
+    width: 10px;
+    height: 10px;
+    background-color: #fa9e57;
+    border-width: 5px;
+
+}
+pre > .hiddentext{
+    visibility: hidden;!important;
+}
+
+
+.err{
+    background-color: #eaa1a1;
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+}
+input:focus{
+    background-color: #d4d4d4;}
+#form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 50px;
+    justify-content:center;
+}
+#form>div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.prettyprint{
+
+    width:150px;
+}
+.hiddentext{
+    visibility: hidden;
+}
+input[type=submit]{
+    width:150px;
+    height:30px;
+    border: solid 2px  lightslategrey;
+    border-radius:12px;
+}

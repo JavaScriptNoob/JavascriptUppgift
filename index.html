@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="styles.css">
-    s
+
 </head>
 <body>
 <header>
     <div class="nav">
 
-        <h1></h1>
+        <h1>Dokumentation labb 3a – Enkla Javascript</h1>
     </div>
 </header>
 <main>
     <div class="main-contaner">
+        <h2>Slumpmässigt Array</h2>
         <div class="numbers" id="num">
-            <button id="math-button" onclick="getRandomValues()">Lorem ipsum dolor sit amet.
+            <button id="math-button" onclick="getRandomValues()">Slumpspel
             </button>
         </div>
         <div class="form-container">
+            <h2>Javascript Validering</h2>
             <form id="form" novalidate>
                 <div>
                     <label for="name">Matta in din namn</label>
@@ -61,7 +63,40 @@
     </div>
 </main>
 <footer>
+    <h2>HTML Validering</h2>
+    <div class="form-container">
+        <form  action="hello.html">
+            <div>
+                <label >Matta in din namn</label>
+                <div>
+                    <input type="text" name="name" placeholder="name" required >
+                    <p style="color:red" class="prettyprint hiddentext name">Fältetet får inte vara  tomt</p>
+                </div>
+            </div>
+            <div>
+                <label >Matta in din lösenord minst 6 symboler</label>
+                <div>
+                    <input type="password" name="password" placeholder="lösenord" minlength="6" required>
+                    <p style="color:red" class="prettyprint hiddentext password">Fältet är tomt eller värde är för kort</p>
+                </div>
+            </div>
 
+            <div>
+                <label >Matta in din email</label>
+                <div> <input type="email" name="email" placeholder="email" required>
+                    <p style="color:red" class="prettyprint hiddentext email">Värdet är felaktig eller fältet är tom</p>
+                </div>
+
+            </div>
+            <div>
+                <div>
+                    <label >Har du läst villkoren</label>
+                    <input type="checkbox" name="check" required >
+                    <p style="color:red" class="prettypre hallo hiddentext check" >Kryssa fältet</p>
+                </div>
+                <input type="submit" value="Skicka"></div>
+        </form>
+    </div>
 </footer>
 <script src='code.js'></script>
 </body>

@@ -82,9 +82,16 @@ form.addEventListener("submit", (e) => {
     console.log(user);
     console.log(check.checked+" yes it is")
     console.log(user.validateEmail(), user.validateName(), user.validatePass(), user.validatePassRep(), user.check.checked);
-    if (user.validateEmail(), user.validateName(), user.validatePass(), user.validatePassRep(), check.checked) {
+    if (    user.validateEmail(),
+            user.validateName(),
+            user.validatePass(),
+            user.validatePassRep(),
+            check.checked
+    )
+    {
         window.location.href = "hello.html";
-    } else {
+    }
+    else {
         const funcRet = {
             name: user.validateName(),
             password: user.validatePass(),

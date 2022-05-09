@@ -41,3 +41,9 @@ input[type=submit]{
     border: solid 2px  lightslategrey;
     border-radius:12px;
 }
+input:valid {
+    border: 2px solid black;
+}
+input:invalid:required {
+    border: 2px solid red;
+}
